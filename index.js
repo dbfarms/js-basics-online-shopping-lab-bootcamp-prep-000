@@ -38,7 +38,7 @@ function viewCart(){
        console.log("In your cart, you have " + twocartItems + ".")
      } else {
      //var lastcartItem = arrayOfItemsPrices.pop() //slice(0, arrayOfItemsPrices-1);
-     var cartItems = arrayOfItemsPrices.slice(0, arrayOfItemsPrices-1)
+     var cartItems = arrayOfItemsPrices.slice(0, arrayOfItemsPrices.length-1)
      var cartItems = cartItems.join(", ");
      //var oxfordcomma = cartItems + ", and" + arrayOfItemsPrices.pop();
      console.log("In your cart, you have " + cartItems + ", and " + arrayOfItemsPrices.pop() + ".")
